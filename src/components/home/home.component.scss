@@ -1,0 +1,26 @@
+$font-family: Helvetica, sans-serif;
+
+@mixin background{
+    background-image: url(https://source.unsplash.com/bZZp1PmHI0E/1600x900);
+    min-height: 100vh;
+}
+
+.homePage {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include background();
+ h1, h2{
+        color: rgb(209, 201, 201);
+        font-family: $font-family;
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 2rem;
+        letter-spacing: 2px;
+    }
+    h2{
+        font-weight: normal;
+        font-size: 1rem;
+    }
+}
